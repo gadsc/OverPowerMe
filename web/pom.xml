@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>br.com.overpowerme</groupId>
+	<artifactId>web</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.current.version>1.7</java.current.version>
+	</properties>
+
+	<build>
+		<sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+		<scriptSourceDirectory>${project.basedir}/src/main/scripts</scriptSourceDirectory>
+		<testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory>
+		<outputDirectory>${project.basedir}/target/classes</outputDirectory>
+		<testOutputDirectory>${project.basedir}/target/test-classes</testOutputDirectory>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>${java.current.version}</source>
+					<target>${java.current.version}</target>
+					<fork>true</fork>
+					<compilerVersion>${java.current.version}</compilerVersion>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.8.1</version>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-install-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<modules>
+		<module>webcommons</module>
+		<module>webbusiness</module>
+		<module>webjpa</module>
+		<module>webweb</module>
+		<module>webear</module>
+	</modules>
+	<prerequisites>
+		<maven>3.2.1</maven>
+	</prerequisites>
+	<name>server</name>
+	<organization>
+		<name>Over Power Me</name>
+	</organization>
+	<description>Projeto para simular builds/runas de League of Legends.</description>
+	<developers>
+		<developer>
+			<id>1</id>
+			<name>Gabz (Gabriel Corrêa)</name>
+			<email>gadsc@hotmail.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>-3</timezone>
+		</developer>
+		<developer>
+			<id>2</id>
+			<name>Dexter (Dênis Schimidt)</name>
+			<email>denis.schimidt@gmail.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>-3</timezone>
+		</developer>
+		<developer>
+			<id>3</id>
+			<name>Demetrio (Fernando Assis)</name>
+			<email>fernando.uplex@gmail.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>-3</timezone>
+		</developer>
+		<developer>
+			<id>4</id>
+			<name>Jack Daniels (Daniel Bueno)</name>
+			<email>daniel.bueno@ymail.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>-3</timezone>
+		</developer>
+		<developer>
+			<id>5</id>
+			<name>Jet Lag BR (Yanes Tomaszewski)</name>
+			<email>yanestomaszewski@gmail.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>-3</timezone>
+		</developer>
+		<developer>
+			<id>6</id>
+			<name>Brisa (Vanessa Souza)</name>
+			<email>vanes.rds@gmail.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>-3</timezone>
+		</developer>
+		<developer>
+			<id>7</id>
+			<name>Tchuco (Duegi Duarte)</name>
+			<email>diegoduarte98@gmail.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>-3</timezone>
+		</developer>
+		<developer>
+			<id>8</id>
+			<name>Cattapan (Flávio Cattapan)</name>
+			<email>flapanq@yahoo.com.br</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>-3</timezone>
+		</developer>
+		<developer>
+			<id>9</id>
+			<name>The Black (Justino José)</name>
+			<email>justinojosesilva@gmail.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>-3</timezone>
+		</developer>
+		<developer>
+			<id>10</id>
+			<name>BDS (Bruno Diogo)</name>
+			<email>bruno.jpw@gmail.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>-3</timezone>
+		</developer>
+	</developers>
+	<url>http://</url>
+</project>
