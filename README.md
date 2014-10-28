@@ -6,11 +6,13 @@ Projeto open source para simulações de runas/builds do League of Legends.
 Utilizaremos as seguintes tecnologias:
 
 Desenvolvimento aplicação
+
 Front-End:
 - VRaptor
 - Html 5
 - CSS 3
 - JQuery
+
 Back-End:
 - CDI
 - Spring
@@ -22,10 +24,13 @@ Back-End:
 Infraestrutra
 Server WEB:
 - Glassfish 4.1
+ 
 Barramento:
 - WSO2
+
 Application Server:
 - Glassfish 4.1
+
 Banco de Dados:
 - MongoDB
 
