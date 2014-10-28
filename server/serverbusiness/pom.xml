@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>br.com.overpowerme</groupId>
+        <artifactId>server</artifactId>
+        <version>1.0.0</version>
+    </parent>
+    <groupId>br.com.overpowerme.server</groupId>
+    <artifactId>serverbusiness</artifactId>
+    <packaging>jar</packaging>
+    <name>serverbusiness</name>
+    <dependencies>
+        <dependency>
+            <groupId>br.com.overpowerme.server</groupId>
+            <artifactId>servercommons</artifactId>
+            <version>1.0.0</version>
+            <type>jar</type>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>br.com.overpowerme.server</groupId>
+            <artifactId>serverjpa</artifactId>
+            <version>1.0.0</version>
+            <type>jar</type>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
+    <description>Projeto contendo as regras de negócios que serão injetadas via spring</description>
+</project>

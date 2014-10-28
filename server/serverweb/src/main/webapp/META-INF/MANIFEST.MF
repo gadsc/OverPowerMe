@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Vendor: Over Power Me
+Implementation-Title: serverweb
+Implementation-Version: 1.0.0
+Implementation-Vendor-Id: br.com.overpowerme.server
+Specification-Vendor: Over Power Me
+Build-Jdk: 1.7.0_67
+Built-By: T51400408
+Created-By: Maven Integration for Eclipse
+Specification-Title: serverweb
+Specification-Version: 1.0.0
+
