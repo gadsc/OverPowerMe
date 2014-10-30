@@ -33,10 +33,10 @@
                             <groupId>br.com.overpowerme.server</groupId>
                             <artifactId>serverjpa</artifactId>
                         </jarModule>
-                        <ejbModule>
+                        <jarModule>
                             <groupId>br.com.overpowerme.server</groupId>
                             <artifactId>serverbusiness</artifactId>
-                        </ejbModule>
+                        </jarModule>
                         <webModule>
                             <groupId>br.com.overpowerme.server</groupId>
                             <artifactId>serverweb</artifactId>
