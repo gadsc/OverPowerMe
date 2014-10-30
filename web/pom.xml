@@ -8,7 +8,7 @@
 	<packaging>pom</packaging>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.current.version>1.7</java.current.version>
+		<java.current.version>1.8</java.current.version>
 	</properties>
 
 	<build>
