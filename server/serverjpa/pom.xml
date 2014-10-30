@@ -7,17 +7,16 @@
         <artifactId>server</artifactId>
         <version>1.0.0</version>
     </parent>
+    
     <groupId>br.com.overpowerme.server</groupId>
     <artifactId>serverjpa</artifactId>
     <packaging>jar</packaging>
+    
     <dependencies>
         <dependency>
             <groupId>br.com.overpowerme.server</groupId>
             <artifactId>servercommons</artifactId>
             <version>1.0.0</version>
-            <optional>true</optional>
-            <type>jar</type>
-            <scope>provided</scope>
         </dependency>
     </dependencies>
     <name>serverjpa</name>

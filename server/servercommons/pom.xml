@@ -7,8 +7,7 @@
         <version>1.0.0</version>
     </parent>
     <groupId>br.com.overpowerme.server</groupId>
-      <artifactId>servercommons</artifactId>
-      <packaging>jar</packaging>
-      <name>servercommons</name>
-      <description>Projeto contendo validações e utilitários comuns à todos os módulos.</description>
+    <artifactId>servercommons</artifactId>
+    <packaging>jar</packaging>
+    <name>servercommons</name>
 </project>

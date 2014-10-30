@@ -24,7 +24,7 @@
                     <applicationName>server</applicationName>
                     <displayName>server</displayName>
                     <defaultJavaBundleDir>lib</defaultJavaBundleDir>
-                    <modules>
+                    <!-- <modules>
                         <jarModule>
                             <groupId>br.com.overpowerme.server</groupId>
                             <artifactId>servercommons</artifactId>
@@ -42,7 +42,7 @@
                             <artifactId>serverweb</artifactId>
                             <contextRoot>/server</contextRoot>
                         </webModule>
-                    </modules>
+                    </modules> -->
                 </configuration>
             </plugin>
         </plugins>
@@ -59,22 +59,16 @@
             <groupId>br.com.overpowerme.server</groupId>
             <artifactId>serverbusiness</artifactId>
             <version>1.0.0</version>
-            <type>jar</type>
-            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>br.com.overpowerme.server</groupId>
             <artifactId>servercommons</artifactId>
             <version>1.0.0</version>
-            <type>jar</type>
-            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>br.com.overpowerme.server</groupId>
             <artifactId>serverjpa</artifactId>
             <version>1.0.0</version>
-            <type>jar</type>
-            <optional>true</optional>
         </dependency>
     </dependencies>
     <name>serverear</name>
