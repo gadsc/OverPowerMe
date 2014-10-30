@@ -1,96 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>br.com.overpowerme</groupId>
-        <artifactId>web</artifactId>
-        <version>1.0.0</version>
-    </parent>
-    <groupId>br.com.overpowerme.web</groupId>
-    <artifactId>webweb</artifactId>
-    <packaging>war</packaging>
-    <properties>
-        <timestamp>${maven.build.timestamp}</timestamp>
-        <maven.build.timestamp.format>dd-MM-yyyy HH:mm</maven.build.timestamp.format>
-    </properties>
-    <build>
-        <outputDirectory>${project.basedir}/src/main/webapp/WEB-INF/classes</outputDirectory>
-        <testOutputDirectory>${project.basedir}/src/main/webapp/WEB-INF/test-classes</testOutputDirectory>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-            </resource>
-            <resource>
-                <directory>src/main/resources/br/com/brasilprev/version</directory>
-                <filtering>true</filtering>
-                <targetPath>br/com/brasilprev/version</targetPath>
-            </resource>
-        </resources>
-        <plugins>
-            <plugin>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.4</version>
-                <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-    <dependencies>
-        <dependency>
-            <groupId>br.com.overpowerme.web</groupId>
-            <artifactId>webcommons</artifactId>
-            <version>1.0.0</version>
-            <optional>true</optional>
-            <type>jar</type>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>br.com.overpowerme.web</groupId>
-            <artifactId>webbusiness</artifactId>
-            <version>1.0.0</version>
-            <optional>true</optional>
-            <type>jar</type>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>2.42.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-firefox-driver</artifactId>
-            <version>2.42.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-ie-driver</artifactId>
-            <version>2.42.2</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-server</artifactId>
-            <version>2.42.2</version>
-        </dependency>
-        <dependency>
-            <groupId>com.opera</groupId>
-            <artifactId>operadriver</artifactId>
-            <version>1.5</version>
-        </dependency>
-        <dependency>
-            <groupId>org.seleniumhq.selenium.client-drivers</groupId>
-            <artifactId>selenium-java-client-driver</artifactId>
-            <version>1.0.1</version>
-        </dependency>
-    </dependencies>
-    <name>webweb</name>
-    <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in accumsan risus. Nam egestas tortor quis ante posuere posuere. Nulla vulputate euismod ligula, a gravida lectus dictum nec. Aenean ornare est quam, et posuere massa laoreet vel. Etiam nec semper nulla. Pellentesque vestibulum ornare lectus, congue aliquam risus fringilla a. Aenean at gravida ligula, et iaculis magna.</description>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>br.com.overpowerme</groupId>
+		<artifactId>web</artifactId>
+		<version>1.0.0</version>
+	</parent>
+	<groupId>br.com.overpowerme.web</groupId>
+	<artifactId>webweb</artifactId>
+	<packaging>war</packaging>
+	<properties>
+		<timestamp>${maven.build.timestamp}</timestamp>
+		<maven.build.timestamp.format>dd-MM-yyyy HH:mm</maven.build.timestamp.format>
+	</properties>
+	<build>
+		<outputDirectory>${project.basedir}/src/main/webapp/WEB-INF/classes</outputDirectory>
+		<testOutputDirectory>${project.basedir}/src/main/webapp/WEB-INF/test-classes</testOutputDirectory>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<directory>src/main/resources/br/com/brasilprev/version</directory>
+				<filtering>true</filtering>
+				<targetPath>br/com/brasilprev/version</targetPath>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+							<addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<dependencies>
+		<dependency>
+			<groupId>br.com.caelum</groupId>
+			<artifactId>vraptor</artifactId>
+			<version>4.1.1</version>
+		</dependency>
+
+		<!-- <dependency> -->
+		<!-- <groupId>org.glassfish.main.core</groupId> -->
+		<!-- <artifactId>glassfish</artifactId> -->
+		<!-- <version>4.1</version> -->
+		<!-- </dependency> -->
+
+		<!-- <dependency> -->
+		<!-- <groupId>com.google.guava</groupId> -->
+		<!-- <artifactId>guava</artifactId> -->
+		<!-- <version>15.0</version> -->
+		<!-- </dependency> -->
+
+		<dependency>
+			<groupId>javax.el</groupId>
+			<artifactId>el-api</artifactId>
+			<version>2.2</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator-cdi</artifactId>
+			<version>5.1.1.Final</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+			<!-- uncomment this line on app servers -->
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>3.0.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.overpowerme.web</groupId>
+			<artifactId>webcommons</artifactId>
+			<version>1.0.0</version>
+			<optional>true</optional>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>br.com.overpowerme.web</groupId>
+			<artifactId>webbusiness</artifactId>
+			<version>1.0.0</version>
+			<optional>true</optional>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+	<name>webweb</name>
+	<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in accumsan risus. Nam egestas tortor quis ante posuere posuere. Nulla vulputate euismod ligula, a gravida lectus dictum nec. Aenean ornare est quam, et posuere massa laoreet vel. Etiam nec semper nulla. Pellentesque vestibulum ornare lectus, congue aliquam risus fringilla a. Aenean at gravida ligula, et iaculis magna.</description>
 </project>
