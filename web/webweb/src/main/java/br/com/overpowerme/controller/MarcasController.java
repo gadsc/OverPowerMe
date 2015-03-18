@@ -21,4 +21,6 @@ public class MarcasController {
 	public void carousel() {
 		result.include("mensagem", "Olá VRaptor4!");
 	}
+	
+	
 }

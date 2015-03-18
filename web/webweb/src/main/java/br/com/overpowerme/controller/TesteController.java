@@ -21,4 +21,14 @@ public class TesteController {
 	public void imagens() {
 		result.include("mensagem", "Olá VRaptor4!");
 	}
+	
+	@Path("/teste_lista")
+	public void teste_lista() {
+		result.include("mensagem", "Olá VRaptor4!");
+	}
+	
+	@Path("/teste_lista2")
+	public void teste_lista2() {
+		result.include("mensagem", "Olá VRaptor4!");
+	}
 }
