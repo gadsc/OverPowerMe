@@ -45,13 +45,7 @@
 		</plugins>
 	</build>
 	<dependencies>
-		<dependency>
-			<groupId>br.com.caelum</groupId>
-			<artifactId>vraptor</artifactId>
-			<version>4.1.1</version>
-		</dependency>
-
-		<!-- <dependency> -->
+				<!-- <dependency> -->
 		<!-- <groupId>org.glassfish.main.core</groupId> -->
 		<!-- <artifactId>glassfish</artifactId> -->
 		<!-- <version>4.1</version> -->
@@ -62,7 +56,8 @@
 		<!-- <artifactId>guava</artifactId> -->
 		<!-- <version>15.0</version> -->
 		<!-- </dependency> -->
-
+		
+		
 		<dependency>
 			<groupId>javax.el</groupId>
 			<artifactId>el-api</artifactId>
@@ -77,10 +72,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>javax.inject</groupId>
+			<groupId>org.glassfish.hk2.external</groupId>
 			<artifactId>javax.inject</artifactId>
-			<version>1</version>
-			<!-- uncomment this line on app servers -->
+			<version>2.4.0-b10</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -103,6 +97,14 @@
 			<optional>true</optional>
 			<type>jar</type>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>br.com.overpowerme.web</groupId>
+			<artifactId>webjpa</artifactId>
+			<version>1.0.0</version>
+			<optional>true</optional>
+			<type>jar</type>
+			<scope>compile</scope>
 		</dependency>
 		<dependency>
 			<groupId>br.com.overpowerme.web</groupId>
